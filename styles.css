@@ -229,8 +229,8 @@ header {
     /* margin: 0 auto; */
 }
 
-.card-1 p{
-    font-size:0.93rem;
+.card-1 p {
+    font-size: 0.93rem;
 
 }
 
@@ -238,9 +238,7 @@ header {
     font-size: 0.93rem;
 }
 
-.card-3 img{
-    
-}
+.card-3 img {}
 
 /* play instantly section styles */
 .play-instantly-container {
@@ -258,7 +256,7 @@ header {
     padding-left: 200px;
     padding-top: 100px;
     /* border: 3px solid chartreuse; */
-    
+
 }
 
 .play-instantly-description {
@@ -267,7 +265,7 @@ header {
     font-weight: 400;
 }
 
- /* .play-instantly-info {
+/* .play-instantly-info {
     font-weight: 100;
 }  */
 
@@ -280,18 +278,64 @@ header {
     width: 60%;
 }
 
-.barbe-img{
-   position: relative;
-   right: 150px;
-   bottom: 170px;
+.barbe-img {
+    position: relative;
+    right: 150px;
+    bottom: 170px;
 }
-.barbe-img img{
+
+.barbe-img img {
     width: 40%;
     /* border: 3px solid red; */
-   
+
 }
 
-/*  */
+/* button section styles */
+.All-button-container {
+    width: 1200px;
+    margin: 20px auto;
+    height: 30vh;
+    color: #0B0223;
+    font-size: 1.8px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    border: 4px solid #0B0223;
+
+}
+
+.button-title {
+    padding-top: 30px;
+    gap: 30px;
+}
+
+.button-title button {
+    padding: 2px 15px;
+    border-radius: 30px;
+}
+
+button {
+    background-color: white;
+    border:2px solid white ;
+    cursor: pointer;
+    position: relative;
+    transition: 1s;  
+}
+button:hover{
+    color: #FF42A5;
+    border:2px solid #FF42A5 ;
+    
+}
+
+button img {
+    width: 30px;
+    padding-top: 10px;
+}
+
+.Second-fourth-button {
+    margin-top: 20px;
+    padding-left: 80px;
+}
 
 
 
@@ -303,22 +347,21 @@ header {
 
 
 
+/* Media query for small device */
+@media screen and (max-width:576px) {
 
-    /* Media query for small device */
-    @media screen and (max-width:576px) {
-
-        .banner-container .nav-container,
-        .nav-items-container {
-            flex-direction: column;
-        }
-
-        .nav-container {
-            gap: 20px;
-        }
-
-        .nav-items-container {
-            gap: 20px;
-        }
-
-
+    .banner-container .nav-container,
+    .nav-items-container {
+        flex-direction: column;
     }
+
+    .nav-container {
+        gap: 20px;
+    }
+
+    .nav-items-container {
+        gap: 20px;
+    }
+
+
+}
