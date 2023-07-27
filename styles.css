@@ -3,6 +3,7 @@
 
 * {
     box-sizing: border-box;
+    font-family: Work Sans;
 }
 
 /* NAV section styles */
@@ -219,8 +220,11 @@ header {
     justify-content: center;
     align-items: center;
     gap: 10px;
-
-
+    cursor: pointer;
+}
+.card-container:hover{
+    opacity: 0.10s;
+     
 }
 
 .card-container img {
@@ -238,7 +242,18 @@ header {
     font-size: 0.93rem;
 }
 
-.card-3 img {}
+.card-3 span {
+    position:absolute;
+    cursor: pointer;
+    /* margin-bottom: 100px; */
+    /* padding-bottom: 200px; */
+    
+}
+
+.card-3-hover-effect{
+    /* margin-bottom: 500px; */
+    /*columns: dark purple; */
+}
 
 /* play instantly section styles */
 .play-instantly-container {
@@ -316,15 +331,16 @@ header {
 
 button {
     background-color: white;
-    border:2px solid white ;
+    border: 2px solid white;
     cursor: pointer;
     position: relative;
-    transition: 1s;  
+    transition: 1s;
 }
-button:hover{
+
+button:hover {
     color: #FF42A5;
-    border:2px solid #FF42A5 ;
-    
+    border: 2px solid #FF42A5;
+
 }
 
 button img {
@@ -336,6 +352,70 @@ button img {
     margin-top: 20px;
     padding-left: 80px;
 }
+
+/* footer section styles */
+
+footer{
+    width: 1400px;
+    height: 70vh;
+    padding-top: 50px;
+    background-color:#0B0223 ;
+    /* border: 5px solid orangered; */
+}
+
+.logo {
+    /* border: 2px solid green; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+}
+.games-ames{
+   color: white;
+}
+
+.pink-text-color {
+    background: var(--linear, linear-gradient(#FF42A5 0%, #FF42A5 100%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.game-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* width: 1400px; */
+    padding: 10px;
+    gap: 70px;
+    padding-left: 100px;
+    /* background-color:#0B0223 ; */
+    color: #FFF;
+    font-weight: 600;
+}
+.icon-container{
+    display:flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    gap: 70px;
+
+}
+.fa-brands{
+    color: white;
+}
+.game-settings-container{
+    color: rgba(255, 255, 255, 0.60);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
 
 
 
@@ -350,8 +430,9 @@ button img {
 /* Media query for small device */
 @media screen and (max-width:576px) {
 
-    .banner-container .nav-container,
-    .nav-items-container {
+    .banner-container, .nav-container,
+    .nav-items-container, .banner-container,
+    .card-container,.play-instantly-container,.All-button-container{
         flex-direction: column;
     }
 
@@ -362,6 +443,46 @@ button img {
     .nav-items-container {
         gap: 20px;
     }
-
+    .banner-container{
+        margin-left: 0px;
+        width: 100%;
+    }
+    .banner-title{
+        width: 500px;
+       font-weight: 800;
+    }
+    .banner-img {
+        width: 75%;
+        padding: 0px;
+    }
+    .funny-viedo-description{
+        width: 400px;
+    }
+    .play-instantly-info {
+        padding-left: 100px;
+        padding-top: 0px;
+       /* margin: -5px; */
+      
+    }
+    .play-instantly-info h2{
+        padding-left: 0px;
+       
+    }
+    .play-instantly-description{
+        width: 250px;
+    }
+    .play-instantly-container{
+        height: 100%;
+        /* padding: 0px; */
+    }
+    .play-instantly-img-container img{
+        width: 300px;
+    }
+    .play-instantly-img-container{
+        width: 800px;
+    }
+    .barbe-img img{
+        width: 300px;
+    }
 
 }
